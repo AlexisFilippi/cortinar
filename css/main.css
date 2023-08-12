@@ -152,6 +152,7 @@
   }
 
 
+
   /*PESTAÑA CORTINAS*/
 
   .bread{
@@ -166,12 +167,16 @@
   }
   
   
+  
+
   .cortina-contenedor{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
-    column-gap: 20pxpx;
-    row-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: 80%;
+    
+    
+    
     
     
   }
@@ -235,4 +240,32 @@
     }
   
 
- 
+    @media screen and (max-width: 480px) {
+
+      
+     .Inicio{
+      flex-direction: column;
+
+      
+      
+     }
+
+     
+      .ContainerImagenes {
+
+      
+      flex-direction: column;
+    
+     }
+      
+     .cortina-contenedor{
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(12, 1fr);
+      
+
+     }
+
+    }
+
+      
+    
