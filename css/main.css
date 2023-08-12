@@ -74,10 +74,18 @@
     padding: 100px;
     width: 300px;
    
-
+    
   }
  
 
+  .imagen-index{
+    width: 600px;
+    background-color: #b8b8b8;
+    border-radius: 10px;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: bold;
+    color: white;
+  }
   
   
 
@@ -89,6 +97,7 @@
     gap: 30px;
     max-width: 100%;
     font-size: 20px;
+    padding: 20px;
   }
 
 
@@ -104,6 +113,9 @@
   .ImagenContenida {
     height: 90%;
     width: 90%;
+    font-size: 2rem;
+    padding: 20px;
+    font-family: ;
   }
 
   .PiePagina {
@@ -156,10 +168,10 @@
   
   .cortina-contenedor{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+    column-gap: 20pxpx;
+    row-gap: 30px;
     
     
   }
@@ -167,7 +179,7 @@
   .cortina{
     width: 300px;
     
-    background-color: rgb(184, 184, 184);
+    background-color: #b8b8b8;
     margin: 10px;
     border: 1px solid black;
     margin-left: 25%;
