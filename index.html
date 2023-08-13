@@ -16,42 +16,46 @@
 </head>
 
 <body>
-  <header>
-
-    <nav class="Encabezado">
-      <div class="BotonMenu">
-        <button style="background-color: transparent;">
-          <img width="28" height="28" src="https://img.icons8.com/metro/26/menu.png" alt="menu" />
+  <header class="Encabezado">
+    <nav class="navbar  navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid ">
+        <a class="navbar-brand" href="./index.html">CORTINAR</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
         </button>
-
-        <img style="width: 50%;"
-          src="./img/logo-70990954-1628282516-4bf9dbe5235efee630ac73f4843be5871628282517-480-0.png" alt="logo">
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/cortinas.html">CORTINAS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/almohadones.html">ALMOHADONES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/accesorios.html">ACCESORIOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-
-      <ul class="Inicio">
-        
-        <li><a href="./pages/cortinas.html">CORTINAS</a></li>
-        <li><a href="./pages/almohadones.html">ALMOHADONES</a></li>
-        <li><a href="./pages/accesorios.html">ACCESORIOS</a></li>
-        <li><a href="./pages/contacto.html">CONTACTO</a></li>
-      </ul>
-
-      <div class="Busqueda">
-
-
-        <input type="text" placeholder="Buscar">
-        <button style="background-color: transparent;">
-          <img width="28" height="28" src="./img/magnifiersearchingtool_121587.png" alt="">
-        </button>
-
-      </div>
-
     </nav>
-
+    <nav class="navbar bg-body-tertiary ">
+      <div class="container-fluid ">
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Buscar</button>
+        </form>
+      </div>
+    </nav>
   </header>
 
   <main>
+    <div class="logo">
+      <img src="./img/logo-70990954-1628282516-4bf9dbe5235efee630ac73f4843be5871628282517-480-0.png" alt="">
+    </div>
     <div class="container">
       <div id="carouselExampleFade" class="carousel slide carousel-fade">
         <div class="carousel-inner">
@@ -78,21 +82,22 @@
       </div>
     </div>
     <div class="ContainerImagenes">
-      <div class="imagen-index">
+      <div class="fondo-imagen">
         <img class="ImagenContenida" src="./img/cortinas1.jpg" alt="cortinas">
-        Variedad de cortinas listas
-      </div>
+        <h4 class="titulo-imagen">Variedad de cortinas listas</h4>
 
-      <div class="imagen-index">
-        <img class="ImagenContenida" src="./img/almohadones1.jpg" alt="almohadones">
-        Almohadones listos y a pedido
       </div>
-      <div class="imagen-index">
-        <img class="ImagenContenida" style="max-width: 100%;" src="./img/riel1.webp" alt="">
-        Diferentes tipos de barrales, rieles y repuestos
+      <div class="fondo-imagen">
+        <img class="ImagenContenida"  src="./img/almohadones1.jpg" alt="almohadones">
+        <h4 class="titulo-imagen">Almohadones listos y a pedido</h4>
       </div>
-
+      <div class="fondo-imagen">
+        <img class="ImagenContenida" src="./img/riel1.webp" alt="">
+        <h4 class="titulo-imagen">Diferentes tipos de barrales, rieles y repuestos</h4>
+      </div>
     </div>
+
+
 
 
     <div class="Wsp">
