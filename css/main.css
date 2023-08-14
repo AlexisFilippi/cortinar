@@ -151,8 +151,8 @@
 
   .cortina-contenedor{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr ;
-    grid-template-rows: 1fr 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
     width: 80%;
     place-items: center;
     margin: auto;
@@ -229,27 +229,6 @@
     }
   
 
-    @media screen and (max-width: 480px) {
-
-      
-     
-      
-     }
-
-     
-      .ContainerImagenes {
-
-      
-      flex-direction: column;
-    
-     }
-      
-     .cortina-contenedor{
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(12, 1fr);
-      
-
-     }
 
     
 
