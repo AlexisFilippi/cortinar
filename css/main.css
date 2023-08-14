@@ -38,6 +38,15 @@
     margin: auto;
   }
 
+  .carousel-container{
+    display: flex;
+    justify-content: space-around;
+   
+   
+
+  }
+
+
   .container{
     padding: 10px;
     height: 100vh; 
@@ -214,7 +223,7 @@
 
   .vermas{
       padding: 10px;
-     margin-left: 50%;
+     
      background-color: transparent;
      border: 2px solid gray;
 
@@ -225,7 +234,8 @@
  
     .boton-vermas{
       padding: 50px;
-      align-items: center;
+      text-align: center;
+      
     }
   
 
@@ -233,4 +243,27 @@
     
 
       
-    
+    @media screen and (max-width : 480px) {
+
+     
+      .ContainerImagenes{
+        flex-direction: column;
+        padding: 10px;
+        margin-top: 50px;
+      }
+
+      .ImagenContenida{
+        width: 450px;
+        height: 400px;
+        padding: 15px;
+      }
+     
+      .cortina-contenedor{
+
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(12, 1fr);
+
+      }
+      
+
+    }
