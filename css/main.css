@@ -181,19 +181,25 @@
     background-color: #b8b8b8;
     margin: 10px;
     border: 1px solid black;
-    
+    transition: 0.5s;
+    overflow: hidden;
+    object-fit: cover;
     
     
     
     
     
   }
-
+  .cortina:hover{
+    transform: scale(1.2);
+  }
   .cortina-imagen {
     max-width: 100%;
     
-    
   }
+
+  
+
 
   .cortina-titulo{
     font-size: 16px;
