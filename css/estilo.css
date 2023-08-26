@@ -97,4 +97,157 @@ a a {
   font-family: "Montserrat", sans-serif;
   font-size: 22px;
   font-weight: bolder;
+}
+
+.PiePagina {
+  padding: 2rem;
+  background-color: black;
+  font-family: "Karla", sans-serif;
+  font-size: 26px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.PiePagina .LetraFooter {
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: last baseline;
+  font-family: "Karla", sans-serif;
+}
+
+.publicidad {
+  width: 100%;
+}
+
+.bread {
+  padding: 100px;
+  font-size: x-large;
+  margin: auto;
+}
+
+.cortina-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  width: 80%;
+  place-items: center;
+  margin: auto;
+  gap: 50px;
+}
+.cortina-contenedor .cortina {
+  width: 300px;
+  background-color: #b8b8b8;
+  margin: 10px;
+  border: 1px solid black;
+  transition: 0.5s;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.cortina-contenedor .cortina:hover {
+  transform: scale(1.2);
+}
+.cortina-contenedor .cortina .cortina-imagen {
+  max-width: 100%;
+}
+.cortina-contenedor .cortina .cortina-titulo {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  text-align: center;
+  text-decoration: underline;
+}
+.cortina-contenedor .cortina .cortina-parrafo {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.cortina-contenedor .cortina .cortina-precio {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Noto Sans Vithkuqi", sans-serif;
+}
+
+.boton-vermas {
+  padding: 50px;
+  text-align: center;
+}
+.boton-vermas .vermas {
+  padding: 10px;
+  background-color: transparent;
+  border: 2px solid gray;
+}
+
+.almohadon-contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  width: 80%;
+  place-items: center;
+  margin: auto;
+  gap: 50px;
+}
+.almohadon-contenedor .almohadon {
+  width: 300px;
+  background-color: #b8b8b8;
+  margin: 10px;
+  border: 1px solid black;
+  transition: 0.5s;
+  overflow: hidden;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.almohadon-contenedor .almohadon:hover {
+  transform: scale(1.2);
+}
+.almohadon-contenedor .almohadon .almohadon-imagen {
+  max-width: 100%;
+}
+.almohadon-contenedor .almohadon .titulo-almohadon {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  padding: 5px;
+  text-align: center;
+  text-decoration: underline;
+}
+.almohadon-contenedor .almohadon .parrafo-almohadon {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+.almohadon-contenedor .almohadon .precio-almohadon {
+  font-size: 22px;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Noto Sans Vithkuqi", sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+  .ContainerImagenes {
+    flex-direction: column;
+    padding: 10px;
+    margin-top: 50px;
+  }
+  .ImagenContenida {
+    width: 450px;
+    height: 400px;
+    padding: 15px;
+  }
+  .cortina-contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 1fr);
+  }
+  .almohadon-contenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(16, 1fr);
+  }
+  .carousel-container {
+    width: 80%;
+    margin-left: 10%;
+  }
 }/*# sourceMappingURL=estilo.css.map */

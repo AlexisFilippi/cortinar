@@ -1,0 +1,51 @@
+  .almohadon-contenedor {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      width: 80%;
+      place-items: center;
+      margin: auto;
+      gap: 50px;
+
+      .almohadon {
+          width: 300px;
+          background-color: #b8b8b8;
+          margin: 10px;
+          border: 1px solid black;
+          transition: 0.5s;
+          overflow: hidden;
+          object-fit: cover;
+
+          &:hover {
+              transform: scale(1.2);
+          }
+
+          .almohadon-imagen {
+              max-width: 100%;
+          }
+
+          .titulo-almohadon {
+              font-size: 16px;
+              font-weight: bold;
+              font-family: 'Montserrat', sans-serif;
+              padding: 5px;
+              text-align: center;
+              text-decoration: underline;
+          }
+
+          .parrafo-almohadon {
+              font-size: 20px;
+              font-family: 'Poppins', sans-serif;
+              text-align: center;
+          }
+
+          .precio-almohadon {
+              font-size: 22px;
+              text-align: center;
+              font-weight: bold;
+              font-family: 'Noto Sans Vithkuqi', sans-serif;
+          }
+      }
+
+
+  }
