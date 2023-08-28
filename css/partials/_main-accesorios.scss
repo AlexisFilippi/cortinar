@@ -5,40 +5,37 @@
     margin-left: auto;
     gap: 20px;
     justify-content: center;
+
     .img-roller {
         width: 500px;
-     
         border-radius: 10px;
-        
+    }
+
+    .contenedor-roller {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 500px;
+        gap: 20px;
+        justify-content: center;
+
+        .roller-titulo {
+            font-family: $fontMontserrat;
+            text-decoration: underline;
+        }
+
+        .roller-subtitulo {
+            font-family: $fontMontserrat;
+            text-decoration: underline;
+        }
+
+        .roller-parrafo {
+            text-align: justify;
+            font-family: $fontMontserrat;
+            font-size: 16px;
+
+        }
     }
 }
-
-
-.contenedor-roller {
-    display: grid;
-    grid-template-columns: 1fr;
-    width: 500px;
-    gap: 20px;
-    justify-content: center;
-
-    .roller-titulo {
-        font-family: $fontMontserrat;
-        text-decoration: underline;
-    }
-
-    .roller-subtitulo {
-        font-family: $fontMontserrat;
-        text-decoration: underline;
-    }
-
-    .roller-parrafo {
-        text-align: justify;
-        font-family: $fontMontserrat;
-        font-size: 16px;
-
-    }
-}
-
 
 .roller-trans {
     display: flex;
@@ -71,8 +68,6 @@
             transform: scale(1.2);
         }
     }
-
-
 }
 
 .barrales-contenedor {
@@ -84,38 +79,38 @@
     margin: auto;
     margin-top: 100px;
     gap: 20px;
-}
 
-.barrales {
-    width: 300px;
-    background-color: $mainColor;
-    margin: 10px;
-    border: 1px solid black;
-    transition: 0.5s;
-    overflow: hidden;
-    object-fit: cover;
+    .barrales {
+        width: 300px;
+        background-color: $mainColor;
+        margin: 10px;
+        border: 1px solid black;
+        transition: 0.5s;
+        overflow: hidden;
+        object-fit: cover;
 
-    &:hover {
-        transform: scale(1.2);
+        &:hover {
+            transform: scale(1.2);
+        }
+
+        .barral-imagen {
+            max-width: 100%;
+        }
+
+        .titulo-barral {
+            font-size: 16px;
+            font-weight: bold;
+            font-family: $fontMontserrat;
+            padding: 5px;
+            text-align: center;
+            text-decoration: underline;
+        }
+
+        .precio-barral {
+            font-size: 22px;
+            text-align: center;
+            font-weight: bold;
+            font-family: "Noto Sans Vithkuqi", sans-serif;
+        }
     }
-}
-
-.barral-imagen {
-    max-width: 100%;
-}
-
-.titulo-barral {
-    font-size: 16px;
-    font-weight: bold;
-    font-family: $fontMontserrat;
-    padding: 5px;
-    text-align: center;
-    text-decoration: underline;
-}
-
-.precio-barral {
-    font-size: 22px;
-    text-align: center;
-    font-weight: bold;
-    font-family: "Noto Sans Vithkuqi", sans-serif;
 }

@@ -239,23 +239,22 @@ a a {
   width: 500px;
   border-radius: 10px;
 }
-
-.contenedor-roller {
+.rollershade .contenedor-roller {
   display: grid;
   grid-template-columns: 1fr;
   width: 500px;
   gap: 20px;
   justify-content: center;
 }
-.contenedor-roller .roller-titulo {
+.rollershade .contenedor-roller .roller-titulo {
   font-family: "Montserrat", sans-serif;
   text-decoration: underline;
 }
-.contenedor-roller .roller-subtitulo {
+.rollershade .contenedor-roller .roller-subtitulo {
   font-family: "Montserrat", sans-serif;
   text-decoration: underline;
 }
-.contenedor-roller .roller-parrafo {
+.rollershade .contenedor-roller .roller-parrafo {
   text-align: justify;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -300,8 +299,7 @@ a a {
   margin-top: 100px;
   gap: 20px;
 }
-
-.barrales {
+.barrales-contenedor .barrales {
   width: 300px;
   background-color: #b8b8b8;
   margin: 10px;
@@ -311,15 +309,13 @@ a a {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.barrales:hover {
+.barrales-contenedor .barrales:hover {
   transform: scale(1.2);
 }
-
-.barral-imagen {
+.barrales-contenedor .barrales .barral-imagen {
   max-width: 100%;
 }
-
-.titulo-barral {
+.barrales-contenedor .barrales .titulo-barral {
   font-size: 16px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
@@ -327,12 +323,27 @@ a a {
   text-align: center;
   text-decoration: underline;
 }
-
-.precio-barral {
+.barrales-contenedor .barrales .precio-barral {
   font-size: 22px;
   text-align: center;
   font-weight: bold;
   font-family: "Noto Sans Vithkuqi", sans-serif;
+}
+
+.form-contenedor {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+.form-contenedor .map {
+  font-family: "Montserrat", sans-serif;
+}
+.form-contenedor .formulario {
+  width: 25%;
+}
+.form-contenedor .formulario .letra-formulario {
+  font-family: "Montserrat", sans-serif;
 }
 
 @media screen and (max-width: 480px) {

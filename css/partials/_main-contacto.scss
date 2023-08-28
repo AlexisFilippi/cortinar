@@ -1,0 +1,19 @@
+.form-contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+
+    .map {
+        font-family: $fontMontserrat;
+    }
+
+    .formulario {
+        width: 25%;
+
+        .letra-formulario {
+            font-family: $fontMontserrat;
+
+        }
+    }
+}
