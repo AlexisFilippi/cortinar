@@ -293,14 +293,15 @@ a a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  width: 80%;
-  place-items: center;
-  margin: auto;
-  margin-top: 100px;
+  width: 100%;
+  align-content: center;
+  margin-top: 50px;
   gap: 20px;
+  justify-items: center;
 }
 .barrales-contenedor .barrales {
-  width: 300px;
+  width: 400px;
+  height: 300px;
   background-color: #b8b8b8;
   margin: 10px;
   border: 1px solid black;
@@ -314,6 +315,7 @@ a a {
 }
 .barrales-contenedor .barrales .barral-imagen {
   max-width: 100%;
+  height: 70%;
 }
 .barrales-contenedor .barrales .titulo-barral {
   font-size: 16px;
@@ -338,6 +340,9 @@ a a {
 }
 .form-contenedor .map {
   font-family: "Montserrat", sans-serif;
+}
+.form-contenedor .map .iframe-img {
+  width: 100%;
 }
 .form-contenedor .formulario {
   width: 25%;
@@ -392,6 +397,10 @@ a a {
     margin-top: 50px;
     width: 100%;
   }
+  .contenedor-roller .roller-parrafo {
+    width: 80%;
+    margin-left: 10%;
+  }
   .roller-trans {
     display: grid;
     grid-template-rows: 6fr;
@@ -399,9 +408,10 @@ a a {
     width: 100%;
     height: 530px;
     margin-top: 100px;
+    margin-left: auto;
   }
   .roller-trans .img-rollertrans {
-    width: 500px;
+    width: 100%;
     flex-grow: 1;
     -o-object-fit: cover;
        object-fit: cover;
@@ -410,5 +420,21 @@ a a {
   .roller-trans .img-rollertrans:hover {
     width: 100%;
     filter: contrast(120%);
+  }
+  .form-contenedor {
+    flex-direction: column;
+    margin-left: 2%;
+    justify-content: center;
+  }
+  .form-contenedor .map {
+    justify-content: center;
+    width: 80%;
+  }
+  .form-contenedor .map .iframe-img {
+    width: 100%;
+  }
+  .form-contenedor .formulario {
+    width: 80%;
+    justify-content: center;
   }
 }/*# sourceMappingURL=estilo.css.map */

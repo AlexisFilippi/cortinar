@@ -6,6 +6,9 @@
 
     .map {
         font-family: $fontMontserrat;
+        .iframe-img{
+            width: 100%;
+        }
     }
 
     .formulario {
