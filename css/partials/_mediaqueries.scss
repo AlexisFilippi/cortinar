@@ -89,18 +89,22 @@
 
     .form-contenedor{
         flex-direction: column;
-        margin-left: 2%;
+        align-items: center;
+        
         justify-content: center;
         .map{
             justify-content: center;
             width: 80%;
             .iframe-img{
                 width: 100%;
+                
             }
         }
         .formulario{
             width: 80%;
             justify-content: center;
+            
+            
         }
     }
 }

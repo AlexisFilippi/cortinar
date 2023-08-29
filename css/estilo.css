@@ -337,6 +337,7 @@ a a {
   justify-content: center;
   gap: 30px;
   margin-bottom: 50px;
+  align-items: center;
 }
 .form-contenedor .map {
   font-family: "Montserrat", sans-serif;
@@ -423,7 +424,7 @@ a a {
   }
   .form-contenedor {
     flex-direction: column;
-    margin-left: 2%;
+    align-items: center;
     justify-content: center;
   }
   .form-contenedor .map {
