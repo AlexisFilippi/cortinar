@@ -116,6 +116,28 @@ a a {
   justify-content: last baseline;
   font-family: "Karla", sans-serif;
 }
+.PiePagina .iconos {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 10px;
+  text-decoration: none;
+}
+.PiePagina .iconos .fa-brands {
+  padding: 0.5rem;
+}
+
+.fa-facebook {
+  background-color: blue;
+}
+
+.fa-instagram {
+  background-color: #aa2a3f;
+}
+
+.fa-whatsapp {
+  background-color: green;
+}
 
 .publicidad {
   width: 100%;

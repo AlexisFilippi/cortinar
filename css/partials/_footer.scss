@@ -16,4 +16,32 @@
         font-family: 'Karla', sans-serif;
 
     }
+
+    .iconos {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 10px;
+        text-decoration: none;
+        
+
+        .fa-brands {
+            padding: .5rem;
+        }
+
+
+    }
+}
+
+$redes: (
+    facebook: blue,
+    instagram: #aa2a3f,
+    whatsapp: green
+);
+
+
+@each $redsocial, $colordered in $redes{
+    .fa-#{$redsocial} {
+        background-color: $colordered;
+    }
 }
