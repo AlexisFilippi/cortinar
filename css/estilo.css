@@ -9,9 +9,17 @@
   box-sizing: border-box;
 }
 
+.a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  font-weight: bolder;
+}
+
 .Encabezado {
   display: flex;
-  background-color: #b8b8b8;
+  background-color: #648894;
   padding: 1.5rem;
   flex-direction: row;
   flex-wrap: wrap;
@@ -53,50 +61,58 @@
   border: 1px solid;
 }
 
-.ContainerImagenes {
-  display: flex;
-  padding: 60px;
-  gap: 30px;
+.quienes-somos {
+  text-align: center;
   justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  gap: 20px;
+  background-color: #648894;
+  width: 100%;
+  height: 250px;
 }
-.ContainerImagenes .fondo-imagen {
-  border-radius: 10px;
-  background-color: #b8b8b8;
-  overflow: hidden;
-  text-align: center;
-  height: 50%;
-  padding: 10px;
+.quienes-somos .titulo-quienes-somos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
+  color: white;
+  margin-top: 100px;
+  padding: 15px;
 }
-.ContainerImagenes .fondo-imagen .ImagenContenida {
-  width: 500px;
-  height: 50vh;
-  margin-bottom: 30px;
-}
-.ContainerImagenes .fondo-imagen .titulo-imagen {
+.quienes-somos .parrafo-quienes-somos {
+  font-family: "Karla", sans-serif;
   font-size: 20px;
-  font-family: "Montserrat", sans-serif;
-  color: white;
+  font-weight: bold;
+  width: 40%;
+  margin-left: 30%;
 }
 
-.Wsp {
-  position: fixed;
-  width: 70px;
-  height: 70px;
-  bottom: 30px;
-  right: 30px;
-  background-color: #25D366;
-  font-size: 50px;
-  border-radius: 40px;
+.ContainerServ-Imag {
+  display: flex;
+}
+.ContainerServ-Imag .ContainerServicios {
+  width: 50%;
+}
+.ContainerServ-Imag .ContainerImagenes {
+  display: flex;
+  justify-content: right;
+  text-align: right;
+  margin-right: 100px;
+}
+.ContainerServ-Imag .ContainerImagenes .ImagenContenida {
+  width: 400px;
+  height: 500px;
+}
+
+.publi-sin-interes {
+  width: 100%;
+  justify-content: center;
   text-align: center;
-  color: white;
+  margin-bottom: 50px;
+  margin-top: 100px;
 }
-
-a a {
-  text-decoration: none !important;
-  color: white !important;
-  font-family: "Montserrat", sans-serif;
-  font-size: 22px;
-  font-weight: bolder;
+.publi-sin-interes .sin-interes {
+  border-radius: 10px;
 }
 
 .PiePagina {
@@ -324,7 +340,7 @@ a a {
 .barrales-contenedor .barrales {
   width: 400px;
   height: 300px;
-  background-color: #b8b8b8;
+  background-color: #648894;
   margin: 10px;
   border: 1px solid black;
   transition: 0.5s;
