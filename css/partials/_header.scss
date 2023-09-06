@@ -7,8 +7,11 @@
     width: 100%;
     justify-content: space-between;
     align-items: baseline;
-    
-   
+    position: fixed;
+    z-index: 2;
+
+
+
 
     .borde-nav {
         display: block;
@@ -26,11 +29,12 @@
         border: var(--bs-border-width) solid var(--bs-border-color);
         border-radius: var(--bs-border-radius);
         transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-        border: 1px solid #198754;
+        border: 1px solid
     }
 
-   
+    .btn-outline-success {
+        --bs-btn-color: black;
+        --bs-btn-border-color: black;
+        --bs-btn-hover-color: #fff;
+    }
 }
-
-
-

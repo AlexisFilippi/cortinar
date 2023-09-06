@@ -33,15 +33,3 @@
     }
 }
 
-$redes: (
-    facebook: blue,
-    instagram: #aa2a3f,
-    whatsapp: green
-);
-
-
-@each $redsocial, $colordered in $redes{
-    .fa-#{$redsocial} {
-        background-color: $colordered;
-    }
-}

@@ -26,6 +26,8 @@
   width: 100%;
   justify-content: space-between;
   align-items: baseline;
+  position: fixed;
+  z-index: 2;
 }
 .Encabezado .borde-nav {
   display: block;
@@ -43,7 +45,12 @@
   border: var(--bs-border-width) solid var(--bs-border-color);
   border-radius: var(--bs-border-radius);
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  border: 1px solid #198754;
+  border: 1px solid;
+}
+.Encabezado .btn-outline-success {
+  --bs-btn-color: black;
+  --bs-btn-border-color: black;
+  --bs-btn-hover-color: #fff;
 }
 
 .logo {
@@ -51,6 +58,7 @@
   place-items: center;
   padding: 60px;
   margin: auto;
+  padding-top: 180px;
 }
 
 .carousel-container {
@@ -68,14 +76,13 @@
   margin-top: 100px;
   margin-bottom: 100px;
   gap: 20px;
-  background-color: #648894;
   width: 100%;
   height: 250px;
 }
 .quienes-somos .titulo-quienes-somos {
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
-  color: white;
+  color: black;
   margin-top: 100px;
   padding: 15px;
 }
@@ -89,9 +96,31 @@
 
 .ContainerServ-Imag {
   display: flex;
+  gap: 2rem;
+  background-color: #648894;
+  justify-content: space-around;
+  border-radius: 10px;
 }
 .ContainerServ-Imag .ContainerServicios {
   width: 50%;
+  padding-top: 100px;
+  margin-left: 10px;
+}
+.ContainerServ-Imag .ContainerServicios .titulo-servicios {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 36px;
+  color: white;
+}
+.ContainerServ-Imag .ContainerServicios .parrafo-servicios {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  padding-top: 20px;
+}
+.ContainerServ-Imag .ContainerServicios .hr {
+  color: white;
+  border-top-width: 2px;
+  border-top-style: solid;
 }
 .ContainerServ-Imag .ContainerImagenes {
   display: flex;
@@ -101,7 +130,8 @@
 }
 .ContainerServ-Imag .ContainerImagenes .ImagenContenida {
   width: 400px;
-  height: 500px;
+  height: 450px;
+  background-color: white;
 }
 
 .publi-sin-interes {
@@ -143,26 +173,54 @@
   padding: 0.5rem;
 }
 
-.fa-facebook {
-  background-color: blue;
-}
-
-.fa-instagram {
-  background-color: #aa2a3f;
-}
-
-.fa-whatsapp {
-  background-color: green;
-}
-
 .publicidad {
   width: 100%;
+  padding-top: 100px;
 }
 
 .bread {
   padding: 100px;
   font-size: x-large;
   margin: auto;
+}
+
+.deco-cortinas {
+  display: flex;
+  padding-bottom: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.deco-cortinas .deco {
+  border-radius: 10px;
+}
+
+.bloque-cortinas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 60%;
+  gap: 50px;
+  margin-left: 20%;
+  padding-bottom: 100px;
+}
+.bloque-cortinas .img-confec {
+  border-radius: 10px;
+}
+.bloque-cortinas .confeccion {
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.bloque-cortinas .confeccion .titulo-confeccion {
+  font-family: "Montserrat", sans-serif;
+  padding-bottom: 40px;
+}
+.bloque-cortinas .confeccion .parrafo-confeccion {
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
 }
 
 .cortina-contenedor {

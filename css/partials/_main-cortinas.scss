@@ -1,74 +1,117 @@
 .publicidad {
     width: 100%;
+    padding-top: 100px;
 }
 
 .bread {
     padding: 100px;
     font-size: x-large;
     margin: auto;
-    
-}
-
-.cortina-contenedor {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    width: 80%;
-    place-items: center;
-    margin: auto;
-    gap: 50px;
-
-    .cortina {
-        width: 300px;
-        background-color: #b8b8b8;
-        margin: 10px;
-        border: 1px solid black;
-        transition: 0.5s;
-        overflow: hidden;
-        object-fit: cover;
-
-        &:hover {
-            transform: scale(1.2);
-        }
-
-        .cortina-imagen {
-            max-width: 100%;
-        }
-
-        .cortina-titulo {
-            font-size: 16px;
-            font-weight: bold;
-            font-family: 'Montserrat', sans-serif;
-            padding: 5px;
-            text-align: center;
-            text-decoration: underline;
-        }
-
-        .cortina-parrafo {
-            font-size: 20px;
-            font-family: 'Poppins', sans-serif;
-            text-align: center;
-        }
-
-        .cortina-precio {
-            font-size: 22px;
-            text-align: center;
-            font-weight: bold;
-            font-family: 'Noto Sans Vithkuqi', sans-serif;
-        }
-    }
-
 
 }
 
-.boton-vermas {
-    padding: 50px;
+.deco-cortinas {
+    display: flex;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-
-    .vermas {
-        padding: 10px;
-
-        background-color: transparent;
-        border: 2px solid gray;
+    .deco{
+    border-radius: 10px;
     }
 }
+
+.bloque-cortinas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 60%;
+    gap: 50px;
+    margin-left: 20%;
+    padding-bottom: 100px;
+
+    .img-confec{
+        border-radius: 10px;
+    }
+   
+    .confeccion{
+        width:50%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        .titulo-confeccion{
+            font-family: $fontMontserrat;
+            padding-bottom: 40px;
+        }
+        .parrafo-confeccion{
+            text-align: justify;
+            font-family: $fontMontserrat;
+        }
+    }
+
+}
+
+    .cortina-contenedor {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        width: 80%;
+        place-items: center;
+        margin: auto;
+        gap: 50px;
+
+        .cortina {
+            width: 300px;
+            background-color: #b8b8b8;
+            margin: 10px;
+            border: 1px solid black;
+            transition: 0.5s;
+            overflow: hidden;
+            object-fit: cover;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+
+            .cortina-imagen {
+                max-width: 100%;
+            }
+
+            .cortina-titulo {
+                font-size: 16px;
+                font-weight: bold;
+                font-family: 'Montserrat', sans-serif;
+                padding: 5px;
+                text-align: center;
+                text-decoration: underline;
+            }
+
+            .cortina-parrafo {
+                font-size: 20px;
+                font-family: 'Poppins', sans-serif;
+                text-align: center;
+            }
+
+            .cortina-precio {
+                font-size: 22px;
+                text-align: center;
+                font-weight: bold;
+                font-family: 'Noto Sans Vithkuqi', sans-serif;
+            }
+        }
+
+
+    }
+
+    .boton-vermas {
+        padding: 50px;
+        text-align: center;
+
+        .vermas {
+            padding: 10px;
+
+            background-color: transparent;
+            border: 2px solid gray;
+        }
+    }
