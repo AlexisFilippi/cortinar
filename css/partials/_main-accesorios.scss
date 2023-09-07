@@ -37,33 +37,26 @@
     }
 }
 
-.roller-trans {
-    display: flex;
-    align-items: end;
-    width: 1200px;
-    height: 530px;
-    margin-left: 20%;
-    margin-top: 200px;
-
-    .img-rollertrans {
-        width: 500px;
-        flex-grow: 1;
+.bloque-roller{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 100px;
+    justify-content: space-between;
+    width: 50%;
+    margin-left: 15%;
+    border-radius: 10px;
+    gap: 20px;
+    
+    
+    .tamano-roller{
+        width: 400px;
+        height: 300px;
+        padding: 10px;
+        border-radius: 20px;
+        transition: 0.5s;
+        overflow: hidden;
         object-fit: cover;
-        transition: .5s ease;
-
-        &:hover {
-
-            width: 300px;
-
-            filter: contrast(120%);
-        }
-    }
-
-    .img-size {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
+        
         &:hover {
             transform: scale(1.2);
         }
@@ -74,21 +67,25 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 100%;
+    width: 50%;
+    margin-left: 15%;
     align-content: center;
     margin-top: 50px;
     gap: 20px;
     justify-items: center;
+    gap: 25px;
+    margin-bottom: -100px;
 
     .barrales {
         width: 400px;
         height: 300px;
-        background-color: $mainColor;
+        background-color: #a9b2ad;
         margin: 10px;
-        border: 1px solid black;
+        border-radius: 10px;
         transition: 0.5s;
         overflow: hidden;
         object-fit: cover;
+        
         
 
         &:hover {
