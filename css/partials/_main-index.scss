@@ -11,7 +11,8 @@
     justify-content: space-around;
     width: 50%;
     margin-left: 25%;
-    border: 1px solid;
+    border: 5px solid white;
+    border-radius: 10px;
 }
 
 .quienes-somos {
@@ -55,7 +56,7 @@
 .ContainerServ-Imag {
     display: flex;
     gap: 2rem;
-    background-color: #648894;
+    background-color: #0c658e;
     justify-content: space-around;
     border-radius: 10px;
 
@@ -109,8 +110,7 @@
     width: 100%;
     justify-content: center;
     text-align: center;
-    margin-bottom: 50px;
-    margin-top: 100px;
+    padding: 100px;
 
     .sin-interes {
         border-radius: 10px;

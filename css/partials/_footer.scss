@@ -1,29 +1,46 @@
 .PiePagina {
-    padding: 2rem;
+    padding: 1rem;
     background-color: black;
-    font-family: 'Karla', sans-serif;
-    font-size: 26px;
-    text-align: center;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+    display: flex;
+    justify-content: space-around;
     
+    
+
+
     .LetraFooter {
         color: white;
-        text-align: center;
-        align-items: center;
-        justify-content: last baseline;
-        font-family: 'Karla', sans-serif;
-
+        justify-content: baseline;
+        font-family: $fontMontserrat;
+        text-decoration: none;
+        
+        list-style: none;
+        
     }
+
+    a {
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+        color: white;
+      }
+      
+      a:link {
+        color: white;
+      }
+      
+   
 
     .iconos {
         display: flex;
-        justify-content: center;
+        justify-content: right;
+       
         gap: 1rem;
         margin-bottom: 10px;
         text-decoration: none;
+        font-size: 32px;
+        color: white;
         
+
 
         .fa-brands {
             padding: .5rem;
@@ -32,4 +49,3 @@
 
     }
 }
-

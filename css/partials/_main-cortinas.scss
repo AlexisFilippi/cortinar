@@ -7,6 +7,10 @@
     padding: 100px;
     font-size: x-large;
     margin: auto;
+   
+    a {
+        color: var(--bs-breadcrumb-item-active-color);
+      }  
 
 }
 
@@ -126,12 +130,12 @@
 }
 
 .boton-vermas {
-    padding: 50px;
+    padding: 100px;
     text-align: center;
 
     .vermas {
         padding: 10px;
-
+        border-radius: 10px;
         background-color: transparent;
         border: 2px solid gray;
     }
