@@ -14,17 +14,6 @@
 
 }
 
-.deco-cortinas {
-    display: flex;
-    padding-bottom: 100px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    .deco {
-        border-radius: 10px;
-    }
-}
 
 .bloque-cortinas {
     display: flex;
@@ -34,7 +23,7 @@
     width: 60%;
     gap: 50px;
     margin-left: 20%;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 
     .img-confec {
         border-radius: 10px;
@@ -54,11 +43,32 @@
         .parrafo-confeccion {
             text-align: justify;
             font-family: $fontMontserrat;
+            padding-bottom: 20px;
+        }
+        .parrafo-medidas{
+          font-family: $fontMontserrat;
+           background-color: white;
+           border-radius: 10px; 
+           border-left: 10px solid $mainColor;
+           justify-content: left;
+           
+
         }
     }
 
 }
 
+.deco-cortinas {
+    width: 100%;
+    padding-bottom: 100px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .deco {
+        border-radius: 10px;
+    }
+}
 .bloque-cortinas-listas {
     padding-bottom: 100px;
     .hrcortinas-listas {
@@ -109,7 +119,7 @@
             font-family: 'Montserrat', sans-serif;
             padding: 5px;
             text-align: center;
-            text-decoration: underline;
+            
         }
 
         .cortina-parrafo {
@@ -132,11 +142,19 @@
 .boton-vermas {
     padding: 100px;
     text-align: center;
-
+    a {
+        text-decoration: none;
+        color: black;
+    }
     .vermas {
         padding: 10px;
         border-radius: 10px;
         background-color: transparent;
         border: 2px solid gray;
+
+        &:hover{
+            background-color: #b8c4be;
+            
+        }
     }
 }

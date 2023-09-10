@@ -64,20 +64,21 @@
         width: 50%;
         padding-top: 100px;
         margin-left: 10px;
-        
+
 
         .titulo-servicios {
             font-family: $fontMontserrat;
             font-weight: bold;
             font-size: 36px;
             color: white;
-            
+
         }
 
         .parrafo-servicios {
             font-family: $fontMontserrat;
             font-size: 16px;
             padding-top: 20px;
+            color: white;
         }
 
         .hr {
@@ -92,28 +93,31 @@
         justify-content: right;
         text-align: right;
         margin-right: 100px;
-        
+
 
         .ImagenContenida {
             width: 400px;
             height: 450px;
             background-color: white;
-            
+
 
         }
     }
 
 }
 
-
-.publi-sin-interes {
-    width: 100%;
-    justify-content: center;
-    text-align: center;
+.carousel-ofertas {
+    display: flex;
+    width: 80%;
+    margin-left: 10%;
     padding: 100px;
 
-    .sin-interes {
-        border-radius: 10px;
-    }
+    .carousel-caption {
+        color: black;
+        background-color: transparent;
+        font-weight: bold;
+        position: static;
 
+
+    }
 }
