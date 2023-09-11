@@ -108,10 +108,11 @@
 
 .carousel-ofertas {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px;
     width: 80%;
     margin-left: 10%;
-    padding: 100px;
-
     .carousel-caption {
         color: black;
         background-color: transparent;

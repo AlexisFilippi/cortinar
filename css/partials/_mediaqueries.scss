@@ -50,7 +50,20 @@
     }
 
     .carousel-ofertas {
+        display: flex;
         width: 100%;
+        justify-content: center;
+        padding: 100px 0px 100px 0px;
+        margin-left: 0%;
+        
+        .carousel-caption {
+            color: black;
+            background-color: transparent;
+            font-weight: bold;
+            position: static;
+    
+    
+        }
     }
 
     /*CORTINAS*/
@@ -74,7 +87,9 @@
     }
 
     .bloque-cortinas {
+        
         flex-direction: column;
+
         justify-content: justify;
 
         width: 100%;

@@ -9,6 +9,7 @@
      padding: 20px;
      color: white;
      margin-left: 10%;
+     
 
      .titulo-almohadon-sillon {
          font-family: $fontMontserrat;
@@ -33,7 +34,7 @@
      gap: 50px;
      padding: 50px;
      padding-top: 100px;
-
+    
 
 
 
@@ -47,6 +48,7 @@
          transition: 0.5s;
          overflow: hidden;
          object-fit: cover;
+         cursor: pointer;
 
          &:hover {
              transform: scale(1.2);
@@ -72,6 +74,7 @@
          transition: 0.5s;
          overflow: hidden;
          object-fit: cover;
+         cursor: pointer;
 
 
          &:hover {
