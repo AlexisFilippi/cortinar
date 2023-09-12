@@ -1,4 +1,4 @@
-@media screen and (max-width : 480px) {
+@media only screen and (min-device-width:320px) and (max-width : 480px) {
 
 
     /*index*/
@@ -128,7 +128,7 @@
                 border-left: 10px solid $mainColor;
                 justify-content: left;
                 width: 100%;
-                max-width: 100%;
+               
 
 
             }

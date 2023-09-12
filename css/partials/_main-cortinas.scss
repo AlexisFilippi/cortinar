@@ -17,13 +17,12 @@
 
 .bloque-cortinas {
     display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    width: 60%;
-    gap: 50px;
-    margin-left: 20%;
-    padding-bottom: 80px;
+    margin-left: 10%;
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
 
     .img-confec {
         border-radius: 10px;
