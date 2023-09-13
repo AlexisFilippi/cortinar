@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,200&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Vithkuqi&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -29,6 +30,12 @@
   position: fixed;
   z-index: 2;
 }
+
+.Encabezado .navbar {
+  --bs-navbar-color: white;
+  --bs-navbar-active-color: white;
+}
+
 .Encabezado .borde-nav {
   display: block;
   width: 100%;
@@ -47,8 +54,9 @@
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   border: 1px solid;
 }
+
 .Encabezado .btn-outline-success {
-  --bs-btn-color: black;
+  --bs-btn-color: white;
   --bs-btn-border-color: black;
   --bs-btn-hover-color: #fff;
 }
@@ -59,6 +67,7 @@
   padding: 60px;
   margin: auto;
   padding-top: 180px;
+  padding-bottom: 100px;
 }
 
 .carousel-container {
@@ -71,15 +80,17 @@
 }
 
 .quienes-somos {
+  display: flex;
   text-align: center;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
+  padding-top: 200px;
+  padding-bottom: 300px;
   gap: 20px;
-  width: 100%;
   height: 250px;
 }
+
 .quienes-somos .titulo-quienes-somos {
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
@@ -87,12 +98,13 @@
   margin-top: 100px;
   padding: 15px;
 }
+
 .quienes-somos .parrafo-quienes-somos {
   font-family: "Karla", sans-serif;
   font-size: 20px;
   font-weight: bold;
   width: 40%;
-  margin-left: 30%;
+  text-align: center;
 }
 
 .ContainerServ-Imag {
@@ -101,35 +113,42 @@
   background-color: #0c658e;
   justify-content: space-around;
   border-radius: 10px;
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.692);
 }
+
 .ContainerServ-Imag .ContainerServicios {
   width: 50%;
   padding-top: 100px;
   margin-left: 10px;
 }
+
 .ContainerServ-Imag .ContainerServicios .titulo-servicios {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 36px;
   color: white;
 }
+
 .ContainerServ-Imag .ContainerServicios .parrafo-servicios {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   padding-top: 20px;
   color: white;
 }
+
 .ContainerServ-Imag .ContainerServicios .hr {
   color: white;
   border-top-width: 2px;
   border-top-style: solid;
 }
+
 .ContainerServ-Imag .ContainerImagenes {
   display: flex;
   justify-content: right;
   text-align: right;
   margin-right: 100px;
 }
+
 .ContainerServ-Imag .ContainerImagenes .ImagenContenida {
   width: 400px;
   height: 450px;
@@ -141,9 +160,11 @@
   align-items: center;
   justify-content: center;
   padding: 100px;
+  padding-top: 200px;
   width: 80%;
   margin-left: 10%;
 }
+
 .carousel-ofertas .carousel-caption {
   color: black;
   background-color: transparent;
@@ -157,6 +178,7 @@
   display: flex;
   justify-content: space-around;
 }
+
 .PiePagina .LetraFooter {
   color: white;
   justify-content: baseline;
@@ -164,15 +186,18 @@
   text-decoration: none;
   list-style: none;
 }
+
 .PiePagina a {
   outline: none;
   text-decoration: none;
   padding: 2px 1px 0;
   color: white;
 }
+
 .PiePagina a:link {
   color: white;
 }
+
 .PiePagina .iconos {
   display: flex;
   justify-content: right;
@@ -183,6 +208,7 @@
   font-size: 32px;
   color: white;
 }
+
 .PiePagina .iconos .fa-brands {
   padding: 0.5rem;
 }
@@ -197,6 +223,7 @@
   font-size: x-large;
   margin: auto;
 }
+
 .bread a {
   color: var(--bs-breadcrumb-item-active-color);
 }
@@ -210,50 +237,70 @@
   justify-content: center;
   width: 80%;
 }
+
 .bloque-cortinas .img-confec {
   border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.692);
 }
+
 .bloque-cortinas .confeccion {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
 }
+
 .bloque-cortinas .confeccion .titulo-confeccion {
   font-family: "Montserrat", sans-serif;
   padding-bottom: 40px;
 }
+
 .bloque-cortinas .confeccion .parrafo-confeccion {
+  display: flex;
   text-align: justify;
   font-family: "Montserrat", sans-serif;
   padding-bottom: 20px;
+  align-items: center;
 }
+
 .bloque-cortinas .confeccion .parrafo-medidas {
   font-family: "Montserrat", sans-serif;
   background-color: white;
   border-radius: 10px;
   border-left: 10px solid #648894;
+  justify-content: center;
+  text-align: left;
+  padding: 5px;
+  width: 70%;
+  align-items: center;
 }
 
 .deco-cortinas {
-  width: 100%;
+  display: flex;
   padding-bottom: 100px;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 .deco-cortinas .deco {
   border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.692);
 }
 
 .bloque-cortinas-listas {
   padding-bottom: 100px;
 }
+
 .bloque-cortinas-listas .hrcortinas-listas {
   color: black;
   border-top-width: 2px;
   border-top-style: solid;
 }
+
 .bloque-cortinas-listas .cortinas-listas {
   font-family: "Montserrat", sans-serif;
   padding: 10px;
@@ -271,58 +318,76 @@
   margin: auto;
   gap: 50px;
 }
+
 .cortina-contenedor .cortina {
   width: 300px;
-  background-color: #a9b2ad;
+  background-color: #627783;
   margin: 10px;
   border-radius: 10px;
   transition: 0.5s;
   overflow: hidden;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
+  border: 2.5px solid black;
 }
+
 .cortina-contenedor .cortina:hover {
   transform: scale(1.2);
 }
+
 .cortina-contenedor .cortina .cortina-imagen {
   max-width: 100%;
 }
+
 .cortina-contenedor .cortina .cortina-titulo {
   font-size: 16px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   padding: 5px;
   text-align: center;
+  color: white;
 }
+
 .cortina-contenedor .cortina .cortina-parrafo {
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  color: white;
 }
+
 .cortina-contenedor .cortina .cortina-precio {
   font-size: 22px;
   text-align: center;
   font-weight: bold;
   font-family: "Noto Sans Vithkuqi", sans-serif;
+  color: white;
 }
 
 .boton-vermas {
   padding: 100px;
   text-align: center;
 }
+
 .boton-vermas a {
   text-decoration: none;
   color: black;
 }
+
+.boton-vermas a:hover {
+  color: white;
+}
+
 .boton-vermas .vermas {
   padding: 10px;
   border-radius: 10px;
   background-color: transparent;
   border: 2px solid gray;
 }
+
 .boton-vermas .vermas:hover {
-  background-color: #b8c4be;
+  background-color: #627783;
+  color: white;
 }
 
 .bloque-almohadones {
@@ -336,11 +401,13 @@
   color: white;
   margin-left: 10%;
 }
+
 .bloque-almohadones .titulo-almohadon-sillon {
   font-family: "Montserrat", sans-serif;
   padding-bottom: 20px;
   text-align: center;
 }
+
 .bloque-almohadones .parrafo-almohadon-sillon {
   font-size: 22px;
   padding-bottom: 18px;
@@ -357,6 +424,7 @@
   padding: 50px;
   padding-top: 100px;
 }
+
 .img-sillon .tamano-img {
   width: 450px;
   height: 400px;
@@ -365,9 +433,11 @@
   transition: 0.5s;
   overflow: hidden;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.692);
 }
+
 .img-sillon .tamano-img:hover {
   transform: scale(1.2);
 }
@@ -381,40 +451,50 @@
   margin: auto;
   gap: 50px;
 }
+
 .almohadon-contenedor .almohadon {
   width: 300px;
-  background-color: #a9b2ad;
+  background-color: #627783;
   margin: 10px;
   border-radius: 10px;
   transition: 0.5s;
   overflow: hidden;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
+  border: 2.5px solid black;
 }
+
 .almohadon-contenedor .almohadon:hover {
   transform: scale(1.2);
 }
+
 .almohadon-contenedor .almohadon .almohadon-imagen {
   max-width: 100%;
 }
+
 .almohadon-contenedor .almohadon .titulo-almohadon {
   font-size: 16px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   padding: 10px;
   text-align: center;
+  color: white;
 }
+
 .almohadon-contenedor .almohadon .parrafo-almohadon {
   font-size: 20px;
   font-family: "Poppins", sans-serif;
   text-align: center;
+  color: white;
 }
+
 .almohadon-contenedor .almohadon .precio-almohadon {
   font-size: 22px;
   text-align: center;
   font-weight: bold;
   font-family: "Noto Sans Vithkuqi", sans-serif;
+  color: white;
 }
 
 .main-fondo {
@@ -429,10 +509,13 @@
   gap: 20px;
   justify-content: center;
 }
+
 .rollershade .img-roller {
   width: 500px;
   border-radius: 10px;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.692);
 }
+
 .rollershade .contenedor-roller {
   display: grid;
   grid-template-columns: 1fr;
@@ -440,19 +523,23 @@
   gap: 20px;
   justify-content: center;
 }
+
 .rollershade .contenedor-roller .roller-titulo {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
 }
+
 .rollershade .contenedor-roller .roller-subtitulo {
   font-family: "Montserrat", sans-serif;
   text-decoration: none;
 }
+
 .rollershade .contenedor-roller .roller-parrafo {
   text-align: justify;
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
 }
+
 .rollershade .contenedor-roller .roller-parrafo-lista {
   background-color: white;
   border-left: 10px solid #648894;
@@ -469,6 +556,7 @@
   border-radius: 10px;
   gap: 20px;
 }
+
 .bloque-roller .tamano-roller {
   width: 400px;
   height: 300px;
@@ -477,9 +565,10 @@
   transition: 0.5s;
   overflow: hidden;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
 }
+
 .bloque-roller .tamano-roller:hover {
   transform: scale(1.2);
 }
@@ -497,179 +586,235 @@
   gap: 25px;
   margin-bottom: -100px;
 }
+
 .barrales-contenedor .barrales {
   width: 400px;
   height: 300px;
-  background-color: #a9b2ad;
+  background-color: #627783;
   margin: 10px;
   border-radius: 10px;
   transition: 0.5s;
   overflow: hidden;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
+  border: 2.5px solid black;
 }
+
 .barrales-contenedor .barrales:hover {
   transform: scale(1.2);
 }
+
 .barrales-contenedor .barrales .barral-imagen {
   max-width: 100%;
   height: 70%;
 }
+
 .barrales-contenedor .barrales .titulo-barral {
   font-size: 16px;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   padding: 5px;
   text-align: center;
+  color: white;
 }
+
 .barrales-contenedor .barrales .precio-barral {
   font-size: 22px;
   text-align: center;
   font-weight: bold;
   font-family: "Noto Sans Vithkuqi", sans-serif;
+  color: white;
 }
 
 .form-contenedor {
   display: flex;
   justify-content: center;
   gap: 30px;
-  margin-bottom: 50px;
+  padding-top: -500px;
   align-items: center;
+  background-color: #e1e4f6;
 }
+
 .form-contenedor .map {
   font-family: "Montserrat", sans-serif;
 }
+
 .form-contenedor .map .iframe-img {
   width: 100%;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.692);
+  border-radius: 10px;
 }
+
 .form-contenedor .formulario {
   width: 25%;
+  padding-top: 80px;
 }
+
 .form-contenedor .formulario .letra-formulario {
   font-family: "Montserrat", sans-serif;
 }
 
 .slit-in-vertical {
   animation: slit-in-vertical 0.6s ease-out both;
-} /*logo*/
+}
+
+/*logo*/
 @keyframes slit-in-vertical {
   0% {
     transform: translateZ(-800px) rotateY(90deg);
     opacity: 0;
   }
+
   54% {
     transform: translateZ(-160px) rotateY(87deg);
     opacity: 1;
   }
+
   100% {
     transform: translateZ(0) rotateY(0);
   }
 }
+
 .bounce-top {
   animation: bounce-top 4s cubic-bezier(0.895, 0.03, 0.685, 0.22) infinite both;
-} /*boton ver mas*/
+}
+
+/*boton ver mas*/
 @keyframes bounce-top {
   0% {
     transform: translateY(-45px);
     animation-timing-function: ease-in;
     opacity: 1;
   }
+
   24% {
     opacity: 1;
   }
+
   40% {
     transform: translateY(-24px);
     animation-timing-function: ease-in;
   }
+
   65% {
     transform: translateY(-12px);
     animation-timing-function: ease-in;
   }
+
   82% {
     transform: translateY(-6px);
     animation-timing-function: ease-in;
   }
+
   93% {
     transform: translateY(-4px);
     animation-timing-function: ease-in;
   }
-  25%, 55%, 75%, 87% {
+
+  25%,
+  55%,
+  75%,
+  87% {
     transform: translateY(0);
     animation-timing-function: ease-out;
   }
+
   100% {
     transform: translateY(0);
     animation-timing-function: ease-out;
     opacity: 1;
   }
 }
+
 .fade-in {
   animation: fade-in 1.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-} /*index - map contactanos*/
+}
+
+/*index - map contactanos*/
 @keyframes fade-in {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .tracking-in-expand {
   animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
 }
+
 @keyframes tracking-in-expand {
   0% {
     letter-spacing: -0.5em;
     opacity: 0;
   }
+
   40% {
     opacity: 0.6;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 .text-focus-in {
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
+
 @keyframes text-focus-in {
   0% {
     filter: blur(12px);
     opacity: 0;
   }
+
   100% {
     filter: blur(0);
     opacity: 1;
   }
 }
-@media only screen and (min-device-width: 320px) and (max-width: 480px) {
+
+@media screen and (max-width: 480px) {
+
   /*index*/
   .logo {
     padding-top: 250px;
   }
+
   .carousel-container {
     width: 100%;
   }
+
   .quienes-somos {
     justify-content: left;
     text-align: justify;
+    padding-top: 0px;
+    padding-bottom: 500px;
+    align-items: center;
   }
+
   .quienes-somos .titulo-quienes-somos {
     justify-content: center;
     text-align: center;
+    align-items: center;
   }
+
   .quienes-somos .parrafo-quienes-somos {
     font-size: 16px;
     width: 70%;
     text-align: center;
-    margin-left: 15%;
+    margin-left: 0%;
   }
+
   .ContainerServ-Imag {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .ContainerServ-Imag .ContainerImagenes {
     flex-direction: column;
     align-items: center;
@@ -677,11 +822,13 @@
     justify-content: center;
     margin-left: 22%;
   }
+
   .ContainerServ-Imag .ContainerImagenes .ImagenContenida {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
+
   .carousel-ofertas {
     display: flex;
     width: 100%;
@@ -689,17 +836,20 @@
     padding: 100px 0px 100px 0px;
     margin-left: 0%;
   }
+
   .carousel-ofertas .carousel-caption {
     color: black;
     background-color: transparent;
     font-weight: bold;
     position: static;
   }
+
   /*CORTINAS*/
   .publicidad {
     width: 100%;
     padding-top: 150px;
   }
+
   .deco-cortinas {
     width: 100%;
     padding-bottom: 100px;
@@ -707,10 +857,12 @@
     align-items: center;
     text-align: center;
   }
+
   .deco-cortinas .deco {
     width: 100%;
     border-radius: 10px;
   }
+
   .bloque-cortinas {
     flex-direction: column;
     justify-content: justify;
@@ -719,13 +871,16 @@
     margin-left: 0%;
     padding-bottom: 0px;
   }
+
   .bloque-cortinas .img-confec {
     border-radius: 10px;
     width: 100%;
   }
+
   .bloque-cortinas .confeccion {
     max-width: 100%;
   }
+
   .bloque-cortinas .confeccion .titulo-confeccion {
     font-family: "Montserrat", sans-serif;
     padding-bottom: 40px;
@@ -733,12 +888,14 @@
     width: 100%;
     max-width: 100%;
   }
+
   .bloque-cortinas .confeccion .parrafo-confeccion {
     text-align: justify;
     font-family: "Montserrat", sans-serif;
     padding-bottom: 20px;
     width: 100%;
   }
+
   .bloque-cortinas .confeccion .parrafo-medidas {
     font-family: "Montserrat", sans-serif;
     background-color: white;
@@ -746,7 +903,9 @@
     border-left: 10px solid #648894;
     justify-content: left;
     width: 100%;
+    align-items: center;
   }
+
   /*ALMOHADONES*/
   .bloque-almohadones {
     display: flex;
@@ -757,6 +916,7 @@
     align-items: center;
     margin-left: 0%;
   }
+
   .bloque-almohadones .parrafo-almohadon-sillon {
     font-size: 18px;
     padding-bottom: 18px;
@@ -764,6 +924,7 @@
     width: 100%;
     margin-left: 0%;
   }
+
   .img-sillon {
     flex-direction: column;
     justify-content: center;
@@ -773,6 +934,7 @@
     padding-top: 100px;
     margin-left: 14%;
   }
+
   .img-sillon .tamano-img {
     width: 350px;
     height: 300px;
@@ -783,11 +945,13 @@
     transition: 0.5s;
     overflow: hidden;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
   }
+
   .img-sillon .tamano-img:hover {
     transform: scale(1.2);
   }
+
   /*ACCESORIOS*/
   .bloque-roller {
     grid-template-columns: 1fr;
@@ -796,40 +960,48 @@
     justify-content: center;
     padding-bottom: 45px;
   }
+
   .barrales-contenedor {
     grid-template-columns: 1fr;
     padding-bottom: 200px;
     margin-left: 0%;
     width: 100%;
   }
+
   /*---------------------------------------------*/
   .PiePagina {
     flex-direction: column-reverse;
     align-items: center;
     text-align: justify;
   }
+
   .ContainerImagenes {
     flex-direction: column;
     padding: 10px;
     margin-top: 50px;
   }
+
   .ImagenContenida {
     width: 450px;
     height: 400px;
     padding: 15px;
   }
+
   .cortina-contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 1fr);
   }
+
   .almohadon-contenedor {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(16, 1fr);
   }
+
   .carousel-container {
     width: 80%;
     margin-left: 10%;
   }
+
   .rollershade {
     flex-direction: column;
     padding: 10px;
@@ -838,21 +1010,25 @@
     overflow: hidden;
     justify-content: center;
   }
+
   .rollershade .img-roller {
     width: 100%;
     justify-content: center;
     border-radius: 10px;
   }
+
   .contenedor-roller {
     flex-direction: column;
     padding: 10px;
     margin-top: 50px;
     width: 100%;
   }
+
   .contenedor-roller .roller-parrafo {
     width: 80%;
     margin-left: 10%;
   }
+
   .roller-trans {
     display: grid;
     grid-template-rows: 6fr;
@@ -862,32 +1038,40 @@
     margin-top: 100px;
     margin-left: auto;
   }
+
   .roller-trans .img-rollertrans {
     width: 100%;
     flex-grow: 1;
     -o-object-fit: cover;
-       object-fit: cover;
+    object-fit: cover;
     transition: 0.5s ease;
   }
+
   .roller-trans .img-rollertrans:hover {
     width: 100%;
     filter: contrast(120%);
   }
+
   /*CONTACTO*/
   .form-contenedor {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+
   .form-contenedor .map {
     justify-content: center;
     width: 80%;
   }
+
   .form-contenedor .map .iframe-img {
     width: 100%;
   }
+
   .form-contenedor .formulario {
     width: 80%;
     justify-content: center;
   }
-}/*# sourceMappingURL=estilo.css.map */
+}
+
+/*# sourceMappingURL=estilo.css.map */

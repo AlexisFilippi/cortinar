@@ -1,4 +1,4 @@
-@media only screen and (min-device-width:320px) and (max-width : 480px) {
+@media  screen and  (max-width : 480px) {
 
 
     /*index*/
@@ -15,17 +15,22 @@
 
         justify-content: left;
         text-align: justify;
+        padding-top: 0px;
+        padding-bottom: 500px;
+
+        align-items: center;
 
         .titulo-quienes-somos {
             justify-content: center;
             text-align: center;
+            align-items: center;
         }
 
         .parrafo-quienes-somos {
             font-size: 16px;
             width: 70%;
             text-align: center;
-            margin-left: 15%;
+            margin-left: 0%;
         }
     }
 
@@ -55,14 +60,14 @@
         justify-content: center;
         padding: 100px 0px 100px 0px;
         margin-left: 0%;
-        
+
         .carousel-caption {
             color: black;
             background-color: transparent;
             font-weight: bold;
             position: static;
-    
-    
+
+
         }
     }
 
@@ -87,7 +92,7 @@
     }
 
     .bloque-cortinas {
-        
+
         flex-direction: column;
 
         justify-content: justify;
@@ -128,7 +133,9 @@
                 border-left: 10px solid $mainColor;
                 justify-content: left;
                 width: 100%;
-               
+                
+                
+                align-items: center;
 
 
             }
