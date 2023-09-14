@@ -6,7 +6,6 @@
     display: flex;
     align-items: center;
     text-align: center;
-    margin-left: auto;
     gap: 20px;
     justify-content: center;
 
@@ -20,9 +19,9 @@
     .contenedor-roller {
         display: grid;
         grid-template-columns: 1fr;
-        width: 500px;
+        width: 400px;
         gap: 20px;
-        justify-content: center;
+        place-items: center;
 
         .roller-titulo {
             font-family: $fontMontserrat;
@@ -53,16 +52,15 @@
     grid-template-columns: 1fr 1fr 1fr;
     padding: 100px;
     padding-bottom: 50px;
-    justify-content: space-between;
-    width: 50%;
-    margin-left: 15%;
+    width: 100%;
     border-radius: 10px;
     gap: 20px;
-
+    place-items: center;
+    
 
     .tamano-roller {
-        width: 400px;
-        height: 300px;
+        width: 500px;
+        height: 400px;
         padding: 10px;
         border-radius: 20px;
         transition: 0.5s;
@@ -81,10 +79,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    width: 50%;
-    margin-left: 15%;
+    width: 100%;
     margin-top: 50px;
-    gap: 20px;
     gap: 25px;
     margin-bottom: -100px;
     place-items: center;
@@ -92,7 +88,7 @@
 
 
     .barrales {
-        width: 400px;
+        width: 450px;
         height: 300px;
         background-color: $TarjetasColor;
         margin: 10px;
@@ -102,6 +98,7 @@
         object-fit: cover;
         cursor: pointer;
         border: 2.5px solid black;
+        text-align: center;
 
         &:hover {
             transform: scale(1.2);

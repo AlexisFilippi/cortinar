@@ -199,6 +199,11 @@
         margin-left: 0%;
         justify-content: center;
         padding-bottom: 45px;
+
+        .tamano-roller{
+            width: 400px;
+            height: 300;
+        }
     }
 
     .barrales-contenedor {
@@ -206,6 +211,10 @@
         padding-bottom: 200px;
         margin-left: 0%;
         width: 100%;
+        .barrales{
+            width: 350px;
+            height: 300px;
+        }
     }
 
     /*---------------------------------------------*/
