@@ -4,11 +4,13 @@
      align-items: center;
      justify-content: center;
      text-align: left;
-     background-color: $mainColor;
+     background-color: $SecondaryColor;
      border-radius: 10px;
      padding: 20px;
      color: white;
      margin-left: 10%;
+     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.692);
+     border: 2px solid black;
 
 
      .titulo-almohadon-sillon {
@@ -65,7 +67,7 @@
 
      .almohadon {
          width: 300px;
-         background-color: #627783;
+         background-color: $TarjetasColor;
          margin: 10px;
          border-radius: 10px;
          transition: 0.5s;
@@ -87,7 +89,7 @@
          .titulo-almohadon {
              font-size: 16px;
              font-weight: bold;
-             font-family: 'Montserrat', sans-serif;
+             font-family: $fontMontserrat;
              padding: 10px;
              text-align: center;
              color: white;
@@ -96,7 +98,7 @@
 
          .parrafo-almohadon {
              font-size: 20px;
-             font-family: 'Poppins', sans-serif;
+             font-family: $fontQuicksand;
              text-align: center;
              color: white;
          }
@@ -105,7 +107,7 @@
              font-size: 22px;
              text-align: center;
              font-weight: bold;
-             font-family: 'Noto Sans Vithkuqi', sans-serif;
+             font-family: $fontNumber;
              color: white;
          }
      }

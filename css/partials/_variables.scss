@@ -18,4 +18,26 @@ $fontMontserrat: 'Montserrat', sans-serif;
 
 $fontNumber: 'Noto Sans Vithkuqi', sans-serif;
 
+$fondoWeb: #e1e4f6;
+
 $mainColor: #648894;
+
+$SecondaryColor: #0c658e;
+
+$TarjetasColor: #627783;
+
+%IconosFooter {
+    display: flex;
+    justify-content: right;
+    cursor: pointer;
+    gap: 1rem;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 32px;
+    color: white;
+
+    .fa-brands {
+        padding: .5rem;
+    }
+
+}

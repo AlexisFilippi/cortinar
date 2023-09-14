@@ -31,21 +31,6 @@
    
 
     .iconos {
-        display: flex;
-        justify-content: right;
-        cursor: pointer;
-        gap: 1rem;
-        margin-bottom: 10px;
-        text-decoration: none;
-        font-size: 32px;
-        color: white;
-        
-
-
-        .fa-brands {
-            padding: .5rem;
-        }
-
-
-    }
+      @extend %IconosFooter;
+}
 }

@@ -1,5 +1,5 @@
 .main-fondo {
-    background-color: #e1e4f6;
+    background-color: $fondoWeb;
 }
 
 .rollershade {
@@ -42,7 +42,7 @@
 
         .roller-parrafo-lista {
             background-color: white;
-            border-left: 10px solid $mainColor;
+            border-left: 10px solid $TarjetasColor;
             border-radius: 10px;
         }
     }
@@ -52,11 +52,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 100px;
+    padding-bottom: 50px;
     justify-content: space-between;
     width: 50%;
     margin-left: 15%;
     border-radius: 10px;
     gap: 20px;
+
 
     .tamano-roller {
         width: 400px;
@@ -81,17 +83,18 @@
     grid-template-rows: 1fr 1fr 1fr;
     width: 50%;
     margin-left: 15%;
-    align-content: center;
     margin-top: 50px;
     gap: 20px;
-    justify-items: center;
     gap: 25px;
     margin-bottom: -100px;
+    place-items: center;
+
+
 
     .barrales {
         width: 400px;
         height: 300px;
-        background-color: #627783;
+        background-color: $TarjetasColor;
         margin: 10px;
         border-radius: 10px;
         transition: 0.5s;
@@ -123,7 +126,7 @@
             font-size: 22px;
             text-align: center;
             font-weight: bold;
-            font-family: "Noto Sans Vithkuqi", sans-serif;
+            font-family: $fontNumber;
             color: white;
         }
     }

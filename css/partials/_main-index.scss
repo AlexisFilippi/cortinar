@@ -12,8 +12,10 @@
     justify-content: space-around;
     width: 50%;
     margin-left: 25%;
-    border: 5px solid white;
+    border: 5px solid black;
     border-radius: 10px;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.692);
+
 }
 
 .quienes-somos {
@@ -49,7 +51,7 @@
 .ContainerServ-Imag {
     display: flex;
     gap: 2rem;
-    background-color: #0c658e;
+    background-color: $SecondaryColor;
     justify-content: space-around;
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.692);
@@ -108,10 +110,19 @@
     width: 80%;
     margin-left: 10%;
 
+    .carousel-inner {
+        border: 5px solid black;
+        border-radius: 10px;
+        box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.692);
+    }
+
     .carousel-caption {
         color: black;
         background-color: transparent;
         font-weight: bold;
         position: static;
+        border: 10px solid black;
+        color: white;
+        background-color: black;
     }
 }
